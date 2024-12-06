@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ListaDeCompras.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ListaDeCompras"
+    xmlns:views ="clr-namespace:ListaDeCompras.ListaDeComp.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ListaDeCompras">
+
+    <ShellContent Title="List" ContentTemplate="{DataTemplate views:ListTodoView}" Route="ListTodoView" />
+    <ShellContent Title="List" ContentTemplate="{DataTemplate views:AddView}" Route="AddView" />
+    <ShellContent Title="List" ContentTemplate="{DataTemplate views:EditView}" Route="EditView" />
+    
+
+</Shell>
